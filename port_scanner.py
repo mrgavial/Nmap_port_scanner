@@ -15,7 +15,7 @@ for port in range(start_port, end_port+1):
     result = s.connect_ex((target, port))
 
     if result == 0:
-        print(f"Port {port}: Açık")
+        print(f"Port {port}: Open")
     else:
-        print(f"Port {port}: Kapalı")
+        print(f"Port {port}: Closed")
     s.close()
